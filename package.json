@@ -1,23 +1,38 @@
 {
-  "name": "webdevplugin.lkx",
+  "name": "webdevplugin",
   "displayName": "Web Dev Plugin",
-  "description": "前端开发扩展包",
-  "version": "0.0.1",
+  "description": "前端开发 vscode 常用插件",
+  "version": "0.0.2",
+  "publisher": "lkxian888",
+  "icon": "logo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkxian888/webdevplugin-vscode"
+  },
+  "sponsor": {
+    "url": "https://github.com/lkxian888/webdevplugin-vscode"
+  },
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^1.0.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Extension Packs"
   ],
+  "galleryBanner": {
+    "color": "#fafafa",
+    "theme": "light"
+  },
   "activationEvents": [
-    "onCommand:lkx-web-dev-extension.helloWorld"
+    "onCommand:webdevplugin.lkx"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "lkx-web-dev-extension.helloWorld",
-        "title": "lkx-vscode"
+        "command": "webdevplugin.lkx",
+        "title": "lkx.plugin"
       }
     ]
   },
@@ -30,7 +45,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.71.0",
+    "@types/vscode": "^1.0.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.1",
     "@types/node": "16.x",

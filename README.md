@@ -1,11 +1,3 @@
-<!--
- * @Description: your description
- * @Author: lkxian
- * @@@Email: lkxian888@163.com
- * @Date: 2022-09-27 10:50:31
- * @LastEditTime: 2022-09-27 14:29:24
--->
-
 # Web Development VSCode Plugins
 
 ## 扩展插件
@@ -133,4 +125,15 @@
   "stylelint.snippet": ["css", "less", "vue", "postcss", "scss", "html"],
   "stylelint.validate": ["css", "less", "vue", "postcss", "scss", "html"],
   "workbench.iconTheme": "vscode-icons",
+```
+
+### build
+
+- [测试和发布](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+
+```bash
+$ vsce package
+# myExtension.vsix generated
+$ vsce publish
+# <publisherID>.myExtension published to VS Code Marketplace
 ```
